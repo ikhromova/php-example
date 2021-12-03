@@ -1,0 +1,19 @@
+version: "1.0"
+profile:
+  path: qodana.recommended
+script:
+  name: php-migration
+  parameters:
+    fromLevel: 7.0
+    toLevel: 8.0
+include:
+  - name: EditorConfigCharClassRedundancy
+  - name: EditorConfigPartialOverride
+  - name: EditorConfigRootDeclarationUniqueness
+exclude:
+  - name: PhpConcatenationWithEmptyStringCanBeInlinedInspection
+  - name: PhpLoopCanBeReplacedWithStrRepeatInspection
+  - name: PhpTernaryExpressionCanBeReducedToShortVersionInspection
+  - name: All
+    paths:
+      - Tests
