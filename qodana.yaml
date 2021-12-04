@@ -1,6 +1,6 @@
 version: "1.0"
 profile:
-  path: qodana.recommended
+  name: qodana.recommended
 script:
   name: php-migration
   parameters:
